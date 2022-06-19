@@ -16,8 +16,8 @@ before_script:
 # Building and Tagging
 script:
   - docker --version # for Logging purposes print docker version
-  - docker build -t reverse-proxy ./reverse-proxy
-  - docker tag reverse-proxy h4rryk4y/reverse-proxy:latest
+  - docker build -t udagram-reverse-proxy ./udagram-reverse-proxy
+  - docker tag udagram-reverse-proxy h4rryk4y/udagram-reverse-proxy:latest
 
   - docker build -t udagram-frontend ./udagram-frontend
   - docker tag udagram-frontend h4rryk4y/udagram-frontend:latest
@@ -25,8 +25,8 @@ script:
   - docker build -t udagram-api-feed ./udagram-api-feed
   - docker tag udagram-api-feed h4rryk4y/udagram-api-feed:latest
 
-  - docker build -t udagram-api-users ./udagram-api-users
-  - docker tag udagram-api-users h4rryk4y/udagram-api-users:latest
+  - docker build -t udagram-api-users ./udagram-api-user
+  - docker tag udagram-api-users h4rryk4y/udagram-api-user:latest
 
 # DOCKER_PASSWORD and DOCKER_USERNAME set in the Travis repository settings
 after_success:
