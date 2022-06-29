@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: arn:aws:s3:::udagramproject3-dev
+  AWS_PROFILE: devops2
+  AWS_REGION: us-east-1
+  
+  JWT_SECRET: testing
+  POSTGRES_DB: projectuda
+  POSTGRES_HOST: projectuda.ciokpolsgp7g.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
+metadata:
+  name: env-config
