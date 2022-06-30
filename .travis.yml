@@ -36,3 +36,5 @@ after_success:
   - docker push sebastiankru/udagram-api-user:latest
   - docker push sebastiankru/udagram-frontend:latest
   - docker push sebastiankru/reverseproxy:latest
+  
+  
