@@ -3,8 +3,18 @@ import {config} from './config/config';
 
 
 // Configure AWS
-const credentials = new AWS.SharedIniFileCredentials({profile: config.aws_profile});
-AWS.config.credentials = credentials;
+//const credentials = new AWS.SharedIniFileCredentials({profile: config.aws_profile});
+//AWS.config.credentials = credentials;
+
+const credentials = {
+  //accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  accessKeyId: "AKIAQZTAJPSAD7MAF7W3",
+  //secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  secretAccessKey: "h0fA+drRavGVl5x811Jei22JLVSxik+KDoPRfSkk",
+  httpOptions: { timeout: 30000, connectTimeout: 5000 },
+  region: "us-east-1" //Enter your Region.
+}
+AWS.config.update(credentials);
 
 export const s3 = new AWS.S3({
   signatureVersion: 'v4',

@@ -1,14 +1,14 @@
 export const config = {
-  'username': process.env.POSTGRES_USERNAME,
-  'password': process.env.POSTGRES_PASSWORD,
-  'database': process.env.POSTGRES_DB,
-  'host': process.env.POSTGRES_HOST,
+  'username': 'postgres', //process.env.POSTGRES_USERNAME,
+  'password': 'postgres', //process.env.POSTGRES_PASSWORD,
+  'database':  'postgres', // process.env.POSTGRES_DB,
+  'host': 'udagramdb.cbodx2adoh5f.us-east-1.rds.amazonaws.com', // process.env.POSTGRES_HOST,,
   'dialect': 'postgres',
-  'aws_region': process.env.AWS_REGION,
-  'aws_profile': process.env.AWS_PROFILE,
-  'aws_media_bucket': process.env.AWS_BUCKET,
-  'url': process.env.URL,
+  'aws_region': 'us-east-1',
+  'aws_profile': 'default',
+  'aws_media_bucket': 'udagram-basti-dev',
+  'url': 'http://localhost:8100', //process.env.URL,
   'jwt': {
-    'secret': process.env.JWT_SECRET,
+    'secret': 'hello', // process.env.JWT_SECRET,
   },
 };
