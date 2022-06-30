@@ -36,3 +36,5 @@ after_success:
   - docker push h4rryk4y/udagram-api-user:latest
   - docker push h4rryk4y/udagram-frontend:latest
   - docker push h4rryk4y/reverseproxy:latest
+
+  # travis file end
